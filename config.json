@@ -1,0 +1,11 @@
+{
+  "zMapSettings": {
+    "command": "zmap -p {port} {range} -f saddr,sport",
+    "saveToFile": true
+  },
+  "massScanSettings": {
+    "command": "masscan -p{port} -nmap --open-only -Pn --rate=1000 --range={range} --wait 1",
+    "saveToFile": true
+  },
+  "printProcessOutput": true
+}
